@@ -1,0 +1,16 @@
+@mixin headerStyle {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: crimson;
+    font-size: 3rem;
+    font-family: "marvel", sans-serif;
+    background-color: gainsboro;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

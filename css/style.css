@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "marvel";
+  src: url("../fonts/marvel/marvel.woff2") format("woff2"), url("../fonts/marvel/marvel.woff") format("woff"), url("../fonts/marvel/marvel.ttf") format("ttf");
+}
+@font-face {
+  font-family: "momstypewriter";
+  src: url("../fonts/momsTypewriter/moms_typewriter.woff2") format("woff2"), url("../fonts/marvel/marvel.woff") format("woff"), url("../fonts/momsTypewriter/moms_typewriter.ttf") format("ttf");
+}
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .wrapper,
+body .wrapper {
+  width: 70%;
+}
+html .wrapper .header,
+body .wrapper .header {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: crimson;
+  font-size: 3rem;
+  font-family: "marvel", sans-serif;
+  background-color: gainsboro;
+}
+html .wrapper .main,
+body .wrapper .main {
+  display: flex;
+}
+html .wrapper .main .leftside,
+body .wrapper .main .leftside {
+  width: 50%;
+}
+html .wrapper .main .leftside .leftside__container .leftside__main-logo .logo,
+body .wrapper .main .leftside .leftside__container .leftside__main-logo .logo {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+html .wrapper .main .leftside .leftside__container .leftside__small-logo,
+body .wrapper .main .leftside .leftside__container .leftside__small-logo {
+  display: flex;
+  justify-content: space-between;
+}
+html .wrapper .main .leftside .leftside__container .leftside__small-logo .logo,
+body .wrapper .main .leftside .leftside__container .leftside__small-logo .logo {
+  width: 20%;
+}
+html .wrapper .main .rightside,
+body .wrapper .main .rightside {
+  width: 50%;
+}
+html .wrapper .main .rightside .rightside__article .article__text,
+body .wrapper .main .rightside .rightside__article .article__text {
+  font-family: "momstypewriter";
+  text-align: justify;
+}
