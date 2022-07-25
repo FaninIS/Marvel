@@ -3,9 +3,8 @@
     text-transform: capitalize;
     font-weight: 900;
     letter-spacing: 3px;
-    color: crimson;
     font-size: 3rem;
-    font-family: "marvel", sans-serif;
+    font-family: "Marvel", sans-serif;
     background-color: gainsboro;
 }
 
@@ -13,4 +12,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin textStyle {
+    font-family: "Moms Typewriter";
+    line-height: 150%;
+    text-align: justify;
+    line-height: 200%;
+}
+
+@mixin blocksPadding {
+    width: 50%;
+    padding: 0 100px;
+}
+
+@mixin articleStyle($textColor: rgba(70, 69, 69, 0.9), $headerTextColor: crimson) {
+    font-family: "Lato", sans-serif;
+    margin-top: 0;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 5px solid $headerTextColor;
+    margin-bottom: 0;
+    color: $textColor;
+}
+
+@mixin smallLogoStyle {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
 }

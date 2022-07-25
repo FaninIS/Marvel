@@ -1,4 +1,5 @@
 @use "fonts";
+@use "variables" as v;
 @use "mixins" as m;
 
 html,
@@ -6,45 +7,48 @@ body {
     @include m.flex;
 
     .wrapper {
-        width: 70%;
-
         .header {
+            color: v.$headerTextColor;
             @include m.headerStyle;
         }
 
         .main {
             display: flex;
+            padding-top: 50px;
 
             .leftside {
-                width: 50%;
+                @include m.blocksPadding;
 
                 .leftside__container {
                     .container__main-logo {
                         .logo {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
                         }
                     }
 
                     .container__small-logo {
-                        display: flex;
-                        justify-content: space-between;
-                        
-                        p {
-                            width: 25%;
-                            
-                            .logo {}
+                        @include m.smallLogoStyle;
+
+                        .logo {
+                            width: 20%;
                         }
                     }
                 }
             }
 
             .rightside {
-                width: 50%;
+                @include m.blocksPadding;
+
                 .rightside__article {
                     .article__title {
+                        @include m.articleStyle;
                     }
+
                     .article__text {
-                        font-family: "momstypewriter";
-                        text-align: justify;
+                        @include m.textStyle;
+                        color: v.$textColor;
                     }
                 }
             }

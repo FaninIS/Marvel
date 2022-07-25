@@ -1,10 +1,14 @@
 @font-face {
-  font-family: "marvel";
+  font-family: "Marvel", sans-serif;
   src: url("../fonts/marvel/marvel.woff2") format("woff2"), url("../fonts/marvel/marvel.woff") format("woff"), url("../fonts/marvel/marvel.ttf") format("ttf");
 }
 @font-face {
-  font-family: "momstypewriter";
+  font-family: "Moms Typewriter";
   src: url("../fonts/momsTypewriter/moms_typewriter.woff2") format("woff2"), url("../fonts/marvel/marvel.woff") format("woff"), url("../fonts/momsTypewriter/moms_typewriter.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url(../fonts/lato/lato-bold-.woff2) format("woff2"), url(../fonts/lato/lato-bold.woff) format("woff"), url("../fonts/lato/lato-Bold.ttf") format("ttf");
 }
 html,
 body {
@@ -12,44 +16,65 @@ body {
   justify-content: center;
   align-items: center;
 }
-html .wrapper,
-body .wrapper {
-  width: 70%;
-}
 html .wrapper .header,
 body .wrapper .header {
+  color: crimson;
   text-align: center;
   text-transform: capitalize;
   font-weight: 900;
   letter-spacing: 3px;
-  color: crimson;
   font-size: 3rem;
-  font-family: "marvel", sans-serif;
+  font-family: "Marvel", sans-serif;
   background-color: gainsboro;
 }
 html .wrapper .main,
 body .wrapper .main {
   display: flex;
+  padding-top: 50px;
 }
 html .wrapper .main .leftside,
 body .wrapper .main .leftside {
   width: 50%;
+  padding: 0 100px;
+}
+html .wrapper .main .leftside .leftside__container .container__main-logo .logo,
+body .wrapper .main .leftside .leftside__container .container__main-logo .logo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 html .wrapper .main .leftside .leftside__container .container__small-logo,
 body .wrapper .main .leftside .leftside__container .container__small-logo {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
-html .wrapper .main .leftside .leftside__container .container__small-logo p,
-body .wrapper .main .leftside .leftside__container .container__small-logo p {
-  width: 25%;
+html .wrapper .main .leftside .leftside__container .container__small-logo .logo,
+body .wrapper .main .leftside .leftside__container .container__small-logo .logo {
+  width: 20%;
 }
 html .wrapper .main .rightside,
 body .wrapper .main .rightside {
   width: 50%;
+  padding: 0 100px;
+}
+html .wrapper .main .rightside .rightside__article .article__title,
+body .wrapper .main .rightside .rightside__article .article__title {
+  font-family: "Lato", sans-serif;
+  margin-top: 0;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 5px solid crimson;
+  margin-bottom: 0;
+  color: rgba(70, 69, 69, 0.9);
 }
 html .wrapper .main .rightside .rightside__article .article__text,
 body .wrapper .main .rightside .rightside__article .article__text {
-  font-family: "momstypewriter";
+  font-family: "Moms Typewriter";
+  line-height: 150%;
   text-align: justify;
+  line-height: 200%;
+  color: rgba(70, 69, 69, 0.9);
 }

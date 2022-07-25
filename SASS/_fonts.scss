@@ -1,12 +1,18 @@
 @font-face {
-    font-family: "marvel";
+    font-family: "Marvel", sans-serif;
     src: url("../fonts/marvel/marvel.woff2") format("woff2"), url("../fonts/marvel/marvel.woff") format("woff"),
         url("../fonts/marvel/marvel.ttf") format("ttf");
 }
 
 @font-face {
-    font-family: "momstypewriter";
+    font-family: "Moms Typewriter";
     src: url("../fonts/momsTypewriter/moms_typewriter.woff2") format("woff2"),
         url("../fonts/marvel/marvel.woff") format("woff"),
         url("../fonts/momsTypewriter/moms_typewriter.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Lato", sans-serif;
+    src: url(../fonts/lato/lato-bold-.woff2) format("woff2"), url(../fonts/lato/lato-bold.woff) format("woff"),
+        url("../fonts/lato/lato-Bold.ttf") format("ttf");
 }
