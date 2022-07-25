@@ -35,19 +35,14 @@ html .wrapper .main .leftside,
 body .wrapper .main .leftside {
   width: 50%;
 }
-html .wrapper .main .leftside .leftside__container .leftside__main-logo .logo,
-body .wrapper .main .leftside .leftside__container .leftside__main-logo .logo {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-html .wrapper .main .leftside .leftside__container .leftside__small-logo,
-body .wrapper .main .leftside .leftside__container .leftside__small-logo {
+html .wrapper .main .leftside .leftside__container .container__small-logo,
+body .wrapper .main .leftside .leftside__container .container__small-logo {
   display: flex;
   justify-content: space-between;
 }
-html .wrapper .main .leftside .leftside__container .leftside__small-logo .logo,
-body .wrapper .main .leftside .leftside__container .leftside__small-logo .logo {
-  width: 20%;
+html .wrapper .main .leftside .leftside__container .container__small-logo p,
+body .wrapper .main .leftside .leftside__container .container__small-logo p {
+  width: 25%;
 }
 html .wrapper .main .rightside,
 body .wrapper .main .rightside {
